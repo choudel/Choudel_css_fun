@@ -2,10 +2,11 @@
 	import Baccordion from './lib/baccordion.svelte';
 	import Accordion from './lib/accordion.svelte';
 	import Toggle from './lib/toggle.svelte';
+	import Card from './lib/card.svelte'
 	let isToggled = false;
 </script>
 
-
+<Card></Card>
 
 <h1>Welcome to compo_test</h1>
 <Accordion isOpen ={false} buttonText="acoordion">
