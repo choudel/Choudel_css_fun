@@ -7,6 +7,7 @@
 	<h1>Welcome to my components' dump</h1>
 	<h1>
 		<ul>
+			<li><a href="/menu">Sophisticated Adaptative Navbar</a></li>
 			<li><a href="/accordion">Normal Accordion</a></li>
 			<li><a href="/accordion_js">JS Accordion</a></li>
 			<li><a href="/trampoline">Trampoline</a></li>
