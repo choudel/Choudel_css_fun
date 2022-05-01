@@ -1,6 +1,6 @@
 <script>
-    export let style = '';
-    export let label = '';
+	export let style = '';
+	export let label = '';
 	export let isToggled = false;
 </script>
 
@@ -34,7 +34,7 @@
 		height: var(--height);
 		width: var(--height);
 		border-radius: var(--radius);
-		background-color: var(--checkedButton,crimson);
+		background-color: var(--checkedButton, crimson);
 		box-shadow: 1px 1 px 5px rgba(0, 0, 0, 0.3);
 		transition: transform 0.3s ease;
 	}

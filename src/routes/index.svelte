@@ -1,24 +1,29 @@
 <script>
-	import Baccordion from './lib/baccordion.svelte';
-	import Accordion from './lib/accordion.svelte';
 	import Toggle from './lib/toggle.svelte';
-	import Card from './lib/card.svelte'
 	let isToggled = false;
 </script>
 
-<Card></Card>
+<div class="container">
+	<h1>Welcome to my components' dump</h1>
+	<h1>
+		<ul>
+			<li><a href="/accordion">Normal Accordion</a></li>
+			<li><a href="/accordion_js">JS Accordion</a></li>
+			<li><a href="/trampoline">Trampoline</a></li>
+			<li><a href="/card">A card</a></li>
+		</ul>
+	</h1>
+	<Toggle bind:isToggled label="Toggle A" />
+	<Toggle bind:isToggled label="Toggle B" style="--backgroudChecked: grey;" />
+	{#if isToggled}
+		<h1>I'm the best</h1>
+	{/if}
+</div>
 
-<h1>Welcome to compo_test</h1>
-<Accordion isOpen ={false} buttonText="acoordion">
-	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam fugit veritatis voluptate sunt rerum totam ex vero eveniet iste ducimus, eos, facilis laborum sit non cumque nam, est minus neque?</p>
-</Accordion>
-<Baccordion isOpen ={true} buttonText="beta accordion">
-	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam fugit veritatis voluptate sunt rerum totam ex vero eveniet iste ducimus, eos, facilis laborum sit non cumque nam, est minus neque?</p>
-</Baccordion>
-
-
-<Toggle bind:isToggled label="BEta" />
-<Toggle bind:isToggled label="Sigma" style="--backgroudChecked: grey;" />
-{#if isToggled}
-	<h1>Immmm the best</h1>
-{/if}
+<style>
+	.container {
+		display: grid;
+		grid-template-columns: auto;
+		justify-items: center;
+	}
+</style>

@@ -14,7 +14,7 @@ export function slide(node, isOpen) {
 			}
 		],
 		{
-			duration:500,
+			duration: 500,
 			fill: 'both',
 			direction: isOpen ? 'reverse' : 'normal'
 		}

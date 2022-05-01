@@ -1,5 +1,5 @@
 <script>
-	import {slide} from './slide';
+	import { slide } from './slide';
 	export let buttonText = '';
 	export let isOpen = true;
 </script>
@@ -9,7 +9,7 @@
 	{buttonText}</button
 >
 
-<div class="accordion-content" use:slide={isOpen} on:animationEnd={()=>console.log('endeddd')}>
+<div class="accordion-content" use:slide={isOpen} on:animationEnd={() => console.log('endeddd')}>
 	<div class="wrapper"><slot /></div>
 </div>
 
@@ -35,7 +35,7 @@
 		border: solid 1px #333;
 		border-top: 0;
 	}
-	.wrapper{
+	.wrapper {
 		padding: 20px;
 	}
 </style>
