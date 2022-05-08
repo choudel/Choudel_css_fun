@@ -12,6 +12,7 @@
 			<li><a href="/accordion_js">JS Accordion</a></li>
 			<li><a href="/trampoline">Trampoline</a></li>
 			<li><a href="/card">A card</a></li>
+			<li><a href="/tableau">A fancy dynamic tableau</a></li>
 		</ul>
 	</h1>
 	<Toggle bind:isToggled label="Toggle A" />

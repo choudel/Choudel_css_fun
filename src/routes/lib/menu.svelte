@@ -3,32 +3,32 @@
 	let toggle = false;
 
 	let page_1 = [
-		'Items_1',
-		'Items_2',
-		'Items_3',
-		'Items_4',
-		'Items_5'		
+		'page_1 Items_1',
+		'page_1 Items_2',
+		'page_1 Items_3',
+		'page_1 Items_4',
+		'page_1 Items_5'		
 	];
 	let page_2 = [
-		'Items_1',
-		'Items_2',
-		'Items_3',
-		'Items_4',
-		'Items_5'		
+		'page_2 Items_1',
+		'page_2 Items_2',
+		'page_2 Items_3',
+		'page_2 Items_4',
+		'page_2 Items_5'		
 	];
 	let page_3 = [
-		'Items_1',
-		'Items_2',
-		'Items_3',
-		'Items_4',
-		'Items_5'		
+		'page_3 Items_1',
+		'page_3 Items_2',
+		'page_3 Items_3',
+		'page_3 Items_4',
+		'page_3 Items_5'		
 	];
 	let page_4 = [
-		'Items_1',
-		'Items_2',
-		'Items_3',
-		'Items_4',
-		'Items_5'		
+		'page_4 Items_1',
+		'page_4 Items_2',
+		'page_4 Items_3',
+		'page_4 Items_4',
+		'page_4 Items_5'		
 	];
 </script>
 
@@ -49,7 +49,7 @@
 		<div class="first_accordion__content">
 			<div class="second_accordion">
 				<a href="/" class="login">Login</a>
-				<a href="/" class="logo"><img src="/logo.svg" alt="elsensei" width="50" height="50" /></a>
+				<a href="/" class="logo"><img src="/logo.svg" alt="alt logo" width="50" height="50" /></a>
 				<a href="/" class="home">Accueil</a>
 
 				<input
