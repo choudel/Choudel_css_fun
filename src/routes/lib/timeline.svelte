@@ -8,73 +8,95 @@
 </script>
 
 <div class="timeline">
-	
-		{#each timeline as event, i}
-			{#if i % 2 === 0}
-				<div class="container left">
-					<div class="content">
-						<div class="Ldate">{event.date}</div>
-						<h2>{event.h2}</h2>
-						<p>{event.p}</p>
-					</div>
+	{#each timeline as event, i}
+		{#if i % 2 === 0}
+			<div class="container left">
+				<div class="content">
+					<div class="Ldate">{event.date}</div>
+					<h2>{event.h2}</h2>
+					<p>{event.p}</p>
 				</div>
-			{:else}
-				<div class="container right">
-					<div class="content">
-						<div class="Rdate">{event.date}</div>
-						<h2>{event.h2}</h2>
-						<p>{event.p}</p>
-					</div>
+			</div>
+		{:else}
+			<div class="container right">
+				<div class="content">
+					<div class="Rdate">{event.date}</div>
+					<h2>{event.h2}</h2>
+					<p>{event.p}</p>
 				</div>
-			{/if}
-		{/each}
-	
+			</div>
+		{/if}
+	{/each}
 </div>
 
 <style lang="scss">
 	.timeline {
 		width: 100vw;
 		background-color: rgb(162, 182, 143);
-        display: grid;
+		display: grid;
+		position: relative;
+	}
+	.timeline::after {
+		content: '';
+		position: absolute;
+		width: 6px;
+		background-color: white;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		margin-left: -3px;
 	}
 	.left {
 		display: grid;
 		grid-template-areas: 'content .';
-        grid-template-columns: 50vw 50vw;
+		grid-template-columns: 50vw 50vw;
 		grid-template-rows: 50vh;
 	}
+
 	.Ldate {
+		display: grid;
+		min-width:  calc(10vw - 3px);
 		position: absolute;
 		top: -1vh;
-		right: -10vw;
-		
+		right: calc(-10vw - 6px);
+		z-index: 1;
+		background-color: beige;
+		padding: 3px;		
+		border-radius: 5%;
+		justify-items: center;
 	}
 	.right {
 		display: grid;
 		grid-template-areas: '. content';
-        grid-template-columns: 50vw 50vw;
+		grid-template-columns: 50vw 50vw;
 		grid-template-rows: 50vh;
 	}
 	.Rdate {
+		display: grid;
+		min-width: calc(10vw - 3px);
 		position: absolute;
 		top: -1vh;
-		left: -10vw;
-		
+		left: calc(-10vw - 6px);
+		justify-items: center;
+		z-index: 1;
+		background-color: beige;
+		padding: 3px;
+		border-radius: 5%;
 	}
 	.container {
 		display: grid;
-        grid-template-columns: 50vw 50vw;
+		grid-template-columns: 50vw 50vw;
 		grid-template-rows: 50vh;
-        background-color: cornflowerblue;
+		background-color: cornflowerblue;
 		justify-items: center;
 		align-items: center;
 	}
 	.content {
 		display: grid;
-        width: 40vw;
-        height:25vmin;
-        position: relative;
-        grid-area: content;
+		width: 40vw;
+		height: 25vmin;
+		position: relative;
+		grid-area: content;
 		background-color: darkcyan;
-    }
+	}
 </style>
