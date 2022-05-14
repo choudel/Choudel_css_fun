@@ -14,6 +14,7 @@
 			<li><a href="/card">A card</a></li>
 			<li><a href="/tableau">A fancy dynamic tableau</a></li>
 			<li><a href="/timeline">A tool to lay a plan on a timeline</a></li>
+			<li><a href="/isometric">A fun isometric city square</a></li>
 		</ul>
 	</h1>
 	<Toggle bind:isToggled label="Toggle A" />
