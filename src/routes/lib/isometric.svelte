@@ -176,4 +176,42 @@
 		top: -13vw;
 		left: -12.5vw;
 	}
+    .highscraper .wall-one div{
+  position: absolute;
+  display: block;
+  background-color: black;
+  opacity: 0.2;
+  width: 10vw;
+  height: 3px;
+  top: 15px;
+  left: 0px;
+  
+  box-shadow: 0 1vw 0 0 black,
+              0 2vw 0 0 black,
+              0 3vw 0 0 black,
+              0 4vw 0 0 black,
+              0 5vw 0 0 black,
+              0 6vw 0 0 black,
+              0 7vw 0 0 black,
+              0 8vw 0 0 black,
+              0 9vw 0 0 black,
+              0 10vw 0 0 black,
+              0 11vw 0 0 black,
+              0 12vw 0 0 black,
+              0 13vw 0 0 black,
+              0 14vw 0 0 black,
+              0 15vw 0 0 black,
+              0 16vw 0 0 black,
+              0 17vw 0 0 black;
+}
+.highscraper .wall-two{
+  position: absolute;
+  display: block;
+  background-color: #6389a8;
+  width: 25vw;
+  height: 12vw;
+  transform: skewY(45deg);
+  top: -12.5vw;
+  left: -15vw;
+}
 </style>
