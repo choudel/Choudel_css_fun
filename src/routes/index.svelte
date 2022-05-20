@@ -15,7 +15,8 @@
 			<li><a href="/tableau">A fancy dynamic tableau</a></li>
 			<li><a href="/timeline">A tool to lay a plan on a timeline</a></li>
 			<li><a href="/isometric">A fun isometric city square</a></li>
-			<li><a href="/calandar">A fancy calandar hooked to data </a></li>
+			<li><a href="/calandar">A fancy calendar hooked to data </a></li>
+			<li><a href="/calendar">A fancy calendar hooked to data </a></li>
 		</ul>
 	</h1>
 	<Toggle bind:isToggled label="Toggle A" />
